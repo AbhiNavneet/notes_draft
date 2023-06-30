@@ -414,7 +414,7 @@ v2
 
   
 
-### 6. SAVING AND LOADING NUMPY DATA:
+### 6. Saving and Loading NUMPY Data:
 
 > Numpy has two functions save and load for efficiently saving and loading array data to disk. Arrays are saved in a file with .npy extension. The code shown below demonstrates the save and load functions.
 

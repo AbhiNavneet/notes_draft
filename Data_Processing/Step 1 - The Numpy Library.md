@@ -20,7 +20,7 @@ import numpy as np
 
 > **Note**: The name used to refer to the library can be changed using the “as” keyword followed by the preferred name as shown above (numpy as np).
 
-> ## Creating Numpy Arrays:
+## Creating Numpy Arrays:
 
 ### Creating An Array Using a - Python List
 

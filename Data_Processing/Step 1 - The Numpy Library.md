@@ -236,16 +236,27 @@ a.std(), a.std(axis = 0), a.std(axis = 1)
 
 ```py
 np.abs # Compute absolute value of each element in array
+
 np.sqrt # Compute square root of each element in array
+
 np.square # Compute square of each element in array
+
 пр.exp # Compute exponent e**x of each element in array
+
 np.log # Compute log to the base e of each element in array
+
 np.log2 # Compute log to the base 2 of each element in array
+
 np.loa10 # Compute log to the base 10 of each element in array
+
 np.ceil # Rounds off to upper threshold of a number
+
 np.floor # Rounds off to lower threshold of a number
+
 np.sin, np.sinh # Sin and hyperbolic sin of each element in the array
+
 hp.cos, np.cosh # Cos and hyperbolic cos of each element in the array
+
 hp.tan, np.tanh # Tan and hyperbolic tan of each element in the array
 ```
 

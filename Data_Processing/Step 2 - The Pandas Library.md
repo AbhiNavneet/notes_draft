@@ -41,7 +41,7 @@
 
      
 
-### 2.0 Reading & Writing Tabular Data Using Pandas
+## 2.0 Reading & Writing Tabular Data Using Pandas
 
 > The pandas library contains a number of inbuilt functions for reading various formats of tabular data as a DataFrame object.
 

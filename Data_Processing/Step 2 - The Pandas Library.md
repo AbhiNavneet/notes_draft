@@ -6,7 +6,7 @@
 
 > While Numpy is best suited for working with arrays based numerical data, Pandas is designed for working with tabular data. It allows us to perform powerful tabular data based operations similar to those used in spreadsheet programs like excel.
 
-### 1.0 Pandas Objects
+### 1. Pandas Objects
 
 > There are two fundamental Datatypes in pandas, they are:
 
@@ -41,7 +41,7 @@
 
      
 
-## 2.0 Reading & Writing Tabular Data Using Pandas
+## 2. Reading & Writing Tabular Data Using Pandas
 
 > The pandas library contains a number of inbuilt functions for reading various formats of tabular data as a DataFrame object.
 
@@ -63,7 +63,7 @@ df
 
 
 
-## 3.0 Basic Pandas For Data Exploration
+## 3. Basic Pandas For Data Exploration
 
 > For the sake of demonstrating DataFrame operations, we shall be using the “**automobiles dataset**”, which is available as a csv file. This dataset was created in the mid 1980s and it describes various features of the cars available at that time (ex: manufacturer, car type, fuel type, number of cylinders, etc) along with their prices.
 

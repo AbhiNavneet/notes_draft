@@ -6,25 +6,25 @@
 
 ### Why Numpy uses Arrays instead of Python Lists ?
 
-Lists are ordered, mutable and heterogeneous. This makes them extremely flexible and they provide high usability but this flexibility of lists comes at a price. They are not efficient in numerical computations thus **Lists are slow**.
+> Lists are ordered, mutable and heterogeneous. This makes them extremely flexible and they provide high usability but this flexibility of lists comes at a price. They are not efficient in numerical computations thus **Lists are slow**.
 
-Whereas, **Numpy** uses **nd-array** enables programmer to perform fast computations within the array using a technique called **vectorized operations** thus making **nd-array - super fast**.
+> Whereas, **Numpy** uses **nd-array** enables programmer to perform fast computations within the array using a technique called **vectorized operations** thus making **nd-array - super fast**.
 
 ## Importing Numpy Library
 
-To use the numpy library, we first have to **import** it into our current workspace using the import statement as shown below.
+> To use the numpy library, we first have to **import** it into our current workspace using the import statement as shown below.
 
 ```python
 import numpy as np
 ```
 
-**Note**: The name used to refer to the library can be changed using the “as” keyword followed by the preferred name as shown above (numpy as np).
+> **Note**: The name used to refer to the library can be changed using the “as” keyword followed by the preferred name as shown above (numpy as np).
 
 ## Creating Numpy Arrays:
 
 ### Creating An Array Using a - Python List
 
-Arrays can be created using python lists along with the arange as shown below:
+> Arrays can be created using python lists along with the arange as shown below:
 
 ```python
 l1 = [1, 2, 3]  # l1 is python list
@@ -35,7 +35,7 @@ a
 
 ### Creating Arrays Using - arange function
 
-The **arange** function is similar to python’s **range** function:
+> The **arange** function is similar to python’s **range** function:
 
 ```python
 a = np.arange(5)

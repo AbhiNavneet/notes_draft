@@ -10,7 +10,7 @@
 
 > Whereas, **Numpy** uses **nd-array** enables programmer to perform fast computations within the array using a technique called **vectorized operations** thus making **nd-array - super fast**.
 
-## 1.0 Importing Numpy Library
+## Importing Numpy Library
 
 > To use the numpy library, we first have to **import** it into our current workspace using the import statement as shown below.
 
@@ -20,9 +20,9 @@ import numpy as np
 
 > **Note**: The name used to refer to the library can be changed using the “as” keyword followed by the preferred name as shown above (numpy as np).
 
-## 2.0 Creating Numpy Arrays:
+## 1. Creating Numpy Arrays:
 
-### 2.1 Creating An Array Using a - Python List
+### 1.1 Creating An Array Using a - Python List
 
 > Arrays can be created using python lists along with the arange as shown below:
 
@@ -33,7 +33,7 @@ a = np.array(l1) # Using Numpy we convert List to Numpy array
 a
 ```
 
-### 2.2 Creating Arrays Using - arange function
+### 1.2 Creating Arrays Using - arange function
 
 > The **arange** function is similar to python’s **range** function:
 
@@ -47,7 +47,7 @@ a1 = np.arange(5, 20, 3)
 a1
 ```
 
-### 2.3 Creating Arrays Containing Only - Ones
+### 1.3 Creating Arrays Containing Only - Ones
 
 > The **ones** functions can be used to create arrays containing only ones. This is done as shown below:
 
@@ -63,7 +63,7 @@ al = np.ones([2, 4])
 a1
 ```
 
-### 2.4 Creating Arrays Containing Only - Zeroes
+### 1.4 Creating Arrays Containing Only - Zeroes
 
 > The **zeros** functions are very much similar to the ones function just described above, except that it creates arrays containing only zeros:
 
@@ -72,7 +72,7 @@ a4 = np.zeros([3, 4])
 a4
 ```
 
-### 2.5 Creating Arrays Using - Random Number :
+### 1.5 Creating Arrays Using - Random Number :
 
 > Arrays can be created using numpy’s random number generation. This is made possible through the **random module** within the numpy library. 
 
@@ -99,7 +99,7 @@ a
 
 
 
-## 3.0 Indexing And Slicing
+## 2. Indexing And Slicing
 
 > Indexing numpy arrays is quite similar to the indexing protocol used for python lists.
 
@@ -153,9 +153,9 @@ a[1:4, 2:7]
 
 
 
-## 4.0 Array Methods
+## 3. Array Methods
 
-### 4.1 RESHAPE & RESIZE
+### 3.1 RESHAPE & RESIZE
 
 > The **reshape** and **resize** methods perform the task of reshaping a given array into another shape. 
 
@@ -179,7 +179,7 @@ a[1:4, 2:7]
     a.shape
     ```
 
-### 4.2 SORT
+### 3.2 SORT
 
 > The sort function sorts the array in ascending order:
 
@@ -191,7 +191,7 @@ a.sort()
 a
 ```
 
-### 4.3 MAX & MIN
+### 3.3 MAX & MIN
 
 > The max method returns the maximum value along any given axis.
 
@@ -211,7 +211,7 @@ a
 a.min(), a.min(axis = 0), a.min(axis = 1)
 ```
 
-### 4.4 MEAN, VAR & STD:
+### 3.4 MEAN, VAR & STD:
 
 > The mean,, var and std methods return the mean, median, variance and standard devi- ation of the array elements along any given axis.
 
@@ -230,7 +230,7 @@ a.std(), a.std(axis = 0), a.std(axis = 1)
 
 
 
-## 4.5 UFUNCS (Inbuilt Numpy Functions):
+## 3.5 UFUNCS (Inbuilt Numpy Functions):
 
 > Numpy comes with an exhaustive set of **unary** ufuncs, shown in the table below are some of the more relevant ones:
 
@@ -282,7 +282,7 @@ a1 / a2
 a1 % a2
 ```
 
-## 5.0 Linear Algebra using Numpy
+## 4. Linear Algebra using Numpy
 
 > Linear Algebraic operations like dot products, matrix multiplication/transformations, de- compositions and other matrix operations can be performed using numpy’s **linalg** module.
 
@@ -332,7 +332,7 @@ a.T
     np.linalg.norm(a, 1, axis = 1)
     ```
 
-### 5.1 The Dot Product
+### 4.1 The Dot Product
 
 > The dot product is the most fundamental linear algebraic operation between two equal sized vectors (ie: one dimensional array). The dot product can be deconstructed into two sequential operations:
 
@@ -358,7 +358,7 @@ a_dot
 np.dot(a1, a2)
 ```
 
-### 5.2 Matrix Multiplication
+### 4.2 Matrix Multiplication
 
 > Matrix multiplication is a linear algebraic operation between two 2D arrays (ie: Matrices), which results in another matrix. Each value at any index(i, j) of this resultant matrix is the outcome of the dot product of the ith row of the first matrix and the jth column of the second matrix. 
 
@@ -381,7 +381,7 @@ m_prod = m1 @ m2
 m_prod
 ```
 
-### 6.0 Concatenation Of Arrays
+### 5. Concatenation Of Arrays
 
 > Array can be concatenated using the numpy functions described below:
 
@@ -414,7 +414,7 @@ v2
 
   
 
-### 7.0 SAVING AND LOADING NUMPY DATA:
+### 6. SAVING AND LOADING NUMPY DATA:
 
 > Numpy has two functions save and load for efficiently saving and loading array data to disk. Arrays are saved in a file with .npy extension. The code shown below demonstrates the save and load functions.
 

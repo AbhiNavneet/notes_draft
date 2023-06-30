@@ -69,14 +69,13 @@ df
 
 **Dataset Link** : [Automobile_data](https://github.com/AbhiNavneet/notes_draft/blob/main/Data_Processing/Automobile_data.csv)
 
-> We first load the data into a DataFrame using the read csv function and assign it to the variable name df cars as shown below.
-
 ### 3.1 Importing Numpy & Pandas Library
 
 ```py
 import numpy as np
 import pandas as pd
 ```
+> We first load the data into a DataFrame using the read csv function and assign it to the variable name df cars as shown below.
 
 ```py
 df_cars = pd.read_csv('cars.csv') # Loading Dataset from file

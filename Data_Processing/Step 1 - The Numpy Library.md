@@ -255,9 +255,9 @@ np.floor # Rounds off to lower threshold of a number
 
 np.sin, np.sinh # Sin and hyperbolic sin of each element in the array
 
-hp.cos, np.cosh # Cos and hyperbolic cos of each element in the array
+np.cos, np.cosh # Cos and hyperbolic cos of each element in the array
 
-hp.tan, np.tanh # Tan and hyperbolic tan of each element in the array
+np.tan, np.tanh # Tan and hyperbolic tan of each element in the array
 ```
 
 > **Binary** ufuncs are basically ibuilt vectorized numpy functions that can be applied between two arrays of the same size and object type.

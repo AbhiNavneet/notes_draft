@@ -6,7 +6,7 @@
 
 > While Numpy is best suited for working with arrays based numerical data, Pandas is designed for working with tabular data. It allows us to perform powerful tabular data based operations similar to those used in spreadsheet programs like excel.
 
-### Pandas Objects
+### 1. Pandas Objects
 
 > There are two fundamental Datatypes in pandas, they are:
 
@@ -41,7 +41,7 @@
 
      
 
-### Reading & Writing Tabular Data Using Pandas
+### 2. Reading & Writing Tabular Data Using Pandas
 
 > The pandas library contains a number of inbuilt functions for reading various formats of tabular data as a DataFrame object.
 
@@ -63,7 +63,7 @@ df
 
 
 
-## Basic Pandas For Data Exploration
+## 3.0 Basic Pandas For Data Exploration
 
 > For the sake of demonstrating DataFrame operations, we shall be using the “**automobiles dataset**”, which is available as a csv file. This dataset was created in the mid 1980s and it describes various features of the cars available at that time (ex: manufacturer, car type, fuel type, number of cylinders, etc) along with their prices.
 
@@ -71,7 +71,7 @@ df
 
 > We first load the data into a DataFrame using the read csv function and assign it to the variable name df cars as shown below.
 
-### Importing Numpy & Pandas Library
+### 3.1 Importing Numpy & Pandas Library
 
 ```py
 import numpy as np
@@ -92,7 +92,7 @@ df_ cars.columns # Displaying Column names
 
 
 
-### The Head, Tail Method
+### 3.2 The Head, Tail Method
 
 > We can “peek” at the DataFrame’s content using the head, tail methods as shown below. The head and tail methods return the first n and last n rows of the dataset respectively.
 
@@ -106,7 +106,7 @@ df_cars.tail(10)
 
 
 
-### The Info Method:
+### 3.3 The Info Method:
 
 > The info method demonstrated below, gives us information of the data types and the number of non null values present in each column.
 
@@ -116,7 +116,7 @@ df cars.info()
 
 
 
-### The Describe Method:
+### 3.4 The Describe Method:
 
 > The describe methods gives us a statistical summary of all the columns of the DataFrame that contain numerical values. The statistics returned by this method include the **count, mean, standard deviation, minimum, maximum, 25th, 50th and 75th percentiles values numeric column**. This is demonstrated in the code shown below.
 
@@ -126,7 +126,7 @@ df_cars.describe()
 
 
 
-### The Unique Method:
+### 3.5 The Unique Method:
 
 > The number of unique values within any column of a DataFrame can be obtained by using the ”unique” method on its columns. This is demonstrated in the code shown below.
 
@@ -140,7 +140,7 @@ df_cars.make.unique()
 
 
 
-### The value counts Method:
+### 3.6 The value counts Method:
 
 > Returns the count of values contained in a DataFrame column, as shown below:
 
@@ -154,7 +154,7 @@ df_cars.n_cyl.value_counts()
 
 
 
-### The plot Method:
+### 3.7 The plot Method:
 
 > The Pandas plot method returns visualizations/plots of the values. This helps the user to get a more visual/intuitive understanding of the data contained within DataFrames. 
 
@@ -168,7 +168,7 @@ df_cars.make.value counts().plot(kind = 'bar') # bar plot
 
 > Shown below are some more examples of plot methods in Pandas:
 
-#### Histogram
+#### 3.7.1 Histogram
 
 ```py
 df_cars.price.plot(kind = 'hist')
@@ -176,7 +176,7 @@ df_cars.price.plot(kind = 'hist')
 
 > From the histogram shown above, we understand that most of the cars lie within the price range of 500 to 15000.
 
-#### Scatter Plot
+#### 3.7.2 Scatter Plot
 
 ```py
 df_cars.plot(x = 'city_mpg', y = 'price', kind = 'scatter')
@@ -184,7 +184,7 @@ df_cars.plot(x = 'city_mpg', y = 'price', kind = 'scatter')
 
 > Scatter plots are used when one wants to understand the relationship between values in two chosen columns of the DataFrame. In the plot above we see that most of the vehicles have a mileage less than 35 and have their prices below 20000.
 
-### The Drop Method:
+### 3.8 The Drop Method:
 
 > The Drop method removes rows or columns from a DataFrame by specifying label names and corresponding axis of the rows/columns to be dropped as shown below.
 
@@ -194,7 +194,7 @@ df_cars.drop(['drive', 'peak_rpm'], axis = 1).head()
 
 > In the code shown above, we drop columns labelled “**drive**” and “**peak rpm**” . Note that we specify the axis keyword argument as one, to drop columns. The default value for axis is set to zero and hence the drop method by default drops rows. 
 
-### The sort values Method:
+### 3.9 The sort values Method:
 
 > The sort values method allows one to sort a DataFrame based on the values of any one of its numerical columns. Shown in the code below, we sort the dataset based on the “**price**” column.
 
@@ -202,7 +202,7 @@ df_cars.drop(['drive', 'peak_rpm'], axis = 1).head()
 df_cars.sort_values('price', ascending = False).head()
 ```
 
-### The groupby Method:
+### 3.10 The groupby Method:
 
 > The Groupby method is used for aggregating the numerical columns of a DataFrame with respect to some other column containing categorical values. 
 
@@ -215,13 +215,13 @@ df drive
 
 > Thus from the Output of DataFrame df_drive returned above, we know the mean values for each of the numerical columns with respect to the number of cylinders of a vehicle. Thus the average number of cylinders, hp, peak rpm, miles per gallon and price for rear wheel drive cars are 4.8, 133.69, 5071.71, 23.13 and 14070.17 respectively.
 
-## Handling Missing Data (None, nan & NaN):
+## 3.11 Handling Missing Data (None, nan & NaN):
 
 > Real world data is rarely clean and organized, and it is quite common for them to have values missing. The ability to be able to work with missing values is therefore quite important. Pandas makes use of special data handling protocols that makes working with missing data as easy as possible.
 
 > Missing values are referred to as NA values (not available). Pandas relies on Numpy’s Internal representation of NA values while handling missing data. Numpy represents NA values using an abstract float value called nan which is basically an acronym for “Not A Number”.
 
-### ISNA, DROPNA & FILLNA Methods:
+### 3.12 ISNA, DROPNA & FILLNA Methods:
 
 > **Isna, notna, dropna and fillna** are Pandas methods pandas used for handling missing values. The isna and notna methods are used for detecting missing values as shown below. To find out which columns contain missing values we can apply the sum method across the axis = 0 as shown below (this works because True == 1 and False == 0).
 

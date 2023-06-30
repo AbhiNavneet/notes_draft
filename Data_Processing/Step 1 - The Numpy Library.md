@@ -2,7 +2,7 @@
 
 # The Numpy Library
 
-▢NumPy is one of the most important packages/libraries for numerical computing in python. The name **NumPy** basically is short for **Numerical Python**.
+NumPy is one of the most important packages/libraries for numerical computing in python. The name **NumPy** basically is short for **Numerical Python**.
 
 ### Why Numpy uses Arrays instead of Python Lists ?
 

@@ -6,7 +6,7 @@
 
 > While Numpy is best suited for working with arrays based numerical data, Pandas is designed for working with tabular data. It allows us to perform powerful tabular data based operations similar to those used in spreadsheet programs like excel.
 
-### 1. Pandas Objects
+## 1. Pandas Objects
 
 > There are two fundamental Datatypes in pandas, they are:
 
